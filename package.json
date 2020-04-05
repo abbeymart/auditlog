@@ -26,8 +26,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "mochawesome": "^3.1.1",
-    "mongodb": "^3.1.10"
+    "mochawesome": "^5.0.0",
+    "mongodb": "^3.5.5"
   },
   "dependencies": {
     "@mconnect/res-messages": "^0.1.1",
