@@ -1,0 +1,37 @@
+{
+  "name": "@mconnect/auditlog",
+  "version": "0.1.0",
+  "description": "Transactions / audit log for data CRUD functions and access tracking",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbeymart/auditlog.git"
+  },
+  "keywords": [
+    "audit log",
+    "transaction log"
+  ],
+  "author": "Abi Akindele [abbeymart | mconnect.biz]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abbeymart/auditlog/issues"
+  },
+  "homepage": "https://github.com/abbeymart/auditlog#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "mongodb": "^3.1.10"
+  },
+  "dependencies": {
+    "@mconnect/res-messages": "^0.1.1",
+    "@mconnect/utils": "^0.2.0",
+    "@mconnect/validate-crud": "^0.3.0"
+  }
+}
