@@ -1,5 +1,5 @@
 /**
- * @Author: abbeymart | Abi Akindele | @Created: 2019-01-17 | @Updated: 2020-04-05
+ * @Author: abbeymart | Abi Akindele | @Created: 2019-01-17 | @Updated: 2020-04-08
  * @Company: mConnect.biz | @License: MIT
  * @Description: @mconnect/auditlog testing
  */
@@ -58,7 +58,7 @@ suite('@mconnect/translog package Testing, TransLog:', () => {
                 city: 'Toronto'
             };
             const userId     = 'AAAAAAAAAAAAAAAAAAA999';
-            const req        = await mcTranslog.auditLog('Create', userId, {coll, collParams});
+            const req        = await mcTranslog.auditLog('Create', userId, {coll, collParams}) || {};
             // console.log('response: ', req['code']);
             ok(req['code'] === 'success', `response-code should be: 'success'`);
         });
@@ -75,7 +75,7 @@ suite('@mconnect/translog package Testing, TransLog:', () => {
                 city: 'Toronto'
             };
             const userId        = 'AAAAAAAAAAAAAAAAAAA999';
-            const req           = await mcTranslog.auditLog('Update', userId, {coll, collOldParams, collNewParams});
+            const req           = await mcTranslog.auditLog('Update', userId, {coll, collOldParams, collNewParams}) || {};
             // console.log('response: ', req);
             ok(req['code'] === 'success', `response-code should be: 'success'`);
         });
