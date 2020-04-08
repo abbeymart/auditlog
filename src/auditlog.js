@@ -56,7 +56,7 @@ class AuditLog {
         const queryParams = {
             collName  : paramItems.coll,
             collValues: paramItems.collParams,
-            actionType: 'Create',
+            actionType: 'create',
             actionBy  : paramItems.userId,
             actionDate: new Date(),
         };
@@ -102,7 +102,7 @@ class AuditLog {
             collName     : coll,
             collOldValues: collOldParams,
             collNewValues: collNewParams,
-            actionType   : 'Update',
+            actionType   : 'update',
             actionBy     : userId,
             actionDate   : new Date(),
         };
@@ -147,7 +147,7 @@ class AuditLog {
         const queryParams = {
             collName  : coll,
             collValues: collParams,
-            actionType: 'Read',
+            actionType: 'read',
             actionBy  : userId,
             actionDate: new Date(),
         };
@@ -191,7 +191,7 @@ class AuditLog {
         const queryParams = {
             collName  : coll,
             collValues: collParams,
-            actionType: 'Remove',
+            actionType: 'remove',
             actionBy  : userId,
             actionDate: new Date(),
         };
@@ -233,7 +233,7 @@ class AuditLog {
         }
         const queryParams = {
             collValues: loginParams,
-            actionType: 'Login',
+            actionType: 'login',
             actionBy  : userId,
             actionDate: new Date(),
         };
@@ -275,7 +275,7 @@ class AuditLog {
         }
         const queryParams = {
             collValues: logoutParams,
-            actionType: 'Logout',
+            actionType: 'logout',
             actionBy  : userId,
             actionDate: new Date(),
         };
